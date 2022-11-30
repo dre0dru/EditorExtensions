@@ -1,0 +1,1 @@
+﻿SerializeReferenceSelector, interchangeable with SRD/SERREF-EXTENSIONS

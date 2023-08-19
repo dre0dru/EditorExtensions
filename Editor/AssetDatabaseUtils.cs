@@ -27,6 +27,14 @@ namespace Dre0Dru.EditorExtensions.Editor
 
             return LoadAsset<T>(guids.Single());
         }
+        
+        public static T FindAsset<T>()
+            where T : Object
+        {
+            var guids = FindAssetsGuids<T>();
+
+            return LoadAsset<T>(guids.FirstOrDefault());
+        }
 
         public static T LoadAsset<T>(string assetGuid)
             where T : Object
